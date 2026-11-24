@@ -183,7 +183,7 @@ No setor Aquila (visão, alerta e inovação), o Advisor é o **radar pessoal**:
 | **Disponibilidade** | Meta de 99,5% na v1; falha do Advisor não pode afetar as demais VMs |
 | **Custo** | Orçamento de tokens por usuário, cache de contexto e modelos menores para tarefas simples |
 | **Qualidade** | Conjunto de avaliação com tarefas reais e casos adversariais; release bloqueado em regressão |
-| **Recuperação** | Backup do banco e dos volumes em `taurus-storage`, RPO ≤ 24 h, RTO ≤ 8 h |
+| **Recuperação** | Backup do banco e dos volumes em `taurus-hub`, RPO ≤ 24 h, RTO ≤ 8 h |
 | **Observabilidade** | Métricas de latência, custo, taxa de aprovação/recusa e alertas de comportamento anômalo |
 | **Portabilidade** | Entrega reprodutível (imagem + repositório) e instalação standalone documentada |
 | **Licenciamento** | Registrar licença de cada componente e de cada modelo antes da comercialização |
@@ -204,7 +204,7 @@ No setor Aquila (visão, alerta e inovação), o Advisor é o **radar pessoal**:
 | `leo-logistics` | Advisor → Event bus | Canal oficial para ordens de execução |
 | `leo-media`, `leo-marketing`, `leo-devops` | Advisor → (via bus) | Execução delegada, sempre com aprovação conforme o nível |
 | `leo-compute` | Advisor → Compute | Inferência de LLM e voz em GPU |
-| `taurus-storage` | Advisor → Storage | Documentos pessoais e backups |
+| `taurus-hub` | Advisor → Storage | Documentos pessoais e backups |
 | `taurus-portal` | Portal → Advisor | Contratação, criação de usuários e painel do cliente |
 
 ## 9. Modo standalone (produto)
